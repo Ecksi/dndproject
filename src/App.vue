@@ -6,14 +6,14 @@
 </template>
 
 <script>
-import Header from '@/components/atoms/Header';
+  import Header from '@/components/atoms/Header';
 
-export default {
-  name: 'App',
-  components: {
-    Header
+  export default {
+    name: 'App',
+    components: {
+      Header
+    }
   }
-}
 </script>
 
 

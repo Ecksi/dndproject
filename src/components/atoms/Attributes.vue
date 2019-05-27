@@ -5,12 +5,12 @@
 </template>
 
 <script>
-  export default {
-    name: 'Attributes',
-    props: {
-      charAttributes: Object
-    }
-  }
+export default {
+  name: 'Attributes',
+  props: {
+    charAttributes: Object,
+  },
+};
 </script>
 
 <style lang="less" scoped>

@@ -13,17 +13,17 @@
 </template>
 
 <script>
-  import Attributes from '@/components/atoms/Attributes';
+import Attributes from '@/components/atoms/Attributes.vue';
 
-  export default {
-    name: 'CharacterSheet',
-    components: {
-      Attributes
-    },
-    props: {
-      character: Object
-    }
-  }
+export default {
+  name: 'CharacterSheet',
+  components: {
+    Attributes,
+  },
+  props: {
+    character: Object,
+  },
+};
 </script>
 
 <style lang="less" scoped>

@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Melon-Lord",
+    "class": "Cleric",
+    "background": "Urchin",
+    "race": "Drow Elf",
+    "alignment": "Chaotic Evil",
+    "attributes": {
+      "str": 14,
+      "dex": 11,
+      "con": 10,
+      "int": 7,
+      "wis": 15,
+      "cha": 12
+    },
+    "level": 1,
+    "hit-dice": "1d8"
+
+  },
+  {
+    "name": "Tan-Tan",
+    "class": "Bard",
+    "background": "Sailor",
+    "race": "White Dragonborn",
+    "alignment": "Chaotic Good",
+    "attributes": {
+      "str": 14,
+      "dex": 16,
+      "con": 16,
+      "int": 14,
+      "wis": 16,
+      "cha": 19
+    },
+    "level": 1,
+    "hit-dice": "1d8"
+
+  },
+  {
+    "name": "Del",
+    "class": "Rogue",
+    "background": "Charlatan",
+    "race": "Illuskan Human",
+    "alignment": "Chaotic Neutral",
+    "attributes": {
+      "str": 13,
+      "dex": 18,
+      "con": 14,
+      "int": 16,
+      "wis": 11,
+      "cha": 15
+    },
+    "level": 1,
+    "hit-dice": "1d8"
+
+  },
+  {
+    "name": "Thistle",
+    "class": "Ranger",
+    "background": "Hermit",
+    "race": "Half-elf",
+    "alignment": "Chaotic Good",
+    "attributes": {
+      "str": 9,
+      "dex": 16,
+      "con": 12,
+      "int": 10,
+      "wis": 14,
+      "cha": 10
+    },
+    "level": 1,
+    "hit-dice": "1d10"
+
+  },
+  {
+    "name": "Gardein Battlehammer",
+    "class": "Sorcerer",
+    "background": "Sage",
+    "race": "Hill Dwarf",
+    "alignment": "Neutral Evil",
+    "attributes": {
+      "str": 8,
+      "dex": 13,
+      "con": 15,
+      "int": 10,
+      "wis": 12,
+      "cha": 17
+    },
+    "level": 1,
+    "hit-dice": "1d6"
+
+  }
+]

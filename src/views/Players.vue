@@ -1,6 +1,11 @@
 <template>
   <div>
     <h1>Meet the players</h1>
+    <div v-for="character in characters"
+      :key="generateKey(character)"
+    >
+      <CharacterSheet :character=character />
+    </div>
   </div>
 </template>
 

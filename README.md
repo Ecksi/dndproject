@@ -1,34 +1,10 @@
-# dndproject
+# ![rawr](./public/assets/dnd.png) D&D Projecr ![rawr](./public/assets/dndmirror.png)
+Follow our misadventures as we learn how to play D&D - Also learn how to play D&D yourself with what we have learned along the way.
 
-## Project setup
-```
-npm install
-```
+## Visit our site on Heroku
+https://dndmisadventures.herokuapp.com/
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Project setup for Devs
+>```npm install ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+>```npm run serve```

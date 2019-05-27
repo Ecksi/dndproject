@@ -10,25 +10,23 @@
 </template>
 
 <script>
-  import Characters from '@/characters.json';
-  import CharacterSheet from '@/components/organisms/CharacterSheet';
+import Characters from '@/characters.json';
+import CharacterSheet from '@/components/organisms/CharacterSheet.vue';
 
-  export default {
-    name: 'Players',
-    components: {
-      CharacterSheet
+export default {
+  name: 'Players',
+  components: {
+    CharacterSheet,
+  },
+  data: () => ({
+    characters: Characters,
+  }),
+  methods: {
+    generateKey(character) {
+      return Math.random().toString(36).substring(character, 8);
     },
-    data: () => {
-      return {
-        characters: Characters,
-      }
-    },
-    methods: {
-      generateKey(character) {
-        return Math.random().toString(36).substring(character, 8);
-      }
-    }
-  }
+  },
+};
 </script>
 
 <style lang="less" scoped>

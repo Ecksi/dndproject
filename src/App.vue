@@ -1,15 +1,22 @@
 <template>
   <div>
-    Learn to play D&D and follow along our silly adventures while we learn to play.
+    <Header />
+    <router-view/>
   </div>
 </template>
 
 <script>
+import Header from '@/components/atoms/Header';
 
 export default {
-  name: 'app'
-};
+  name: 'App',
+  components: {
+    Header
+  }
+}
 </script>
 
+
 <style lang="less">
+
 </style>

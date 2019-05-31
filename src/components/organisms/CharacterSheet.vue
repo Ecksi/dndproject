@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-show="character.name === selectedChar">
     <ul>
       <li>Name: {{ character.name }}</li>
       <li>Class: {{ character.class }}</li>
@@ -22,10 +22,13 @@ export default {
   },
   props: {
     character: Object,
-  },
+    selectedChar: String
+  }
 };
 </script>
 
 <style lang="less" scoped>
-
+  ul {
+    list-style: none;
+  }
 </style>

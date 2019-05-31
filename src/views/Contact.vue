@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1>Suggestions? Contact us.</h1>
+    <h1 class="sub-header-text">Suggestions?</h1>
+    <a class="center-text" href="mailto:jimecksi@gmail.com">Contact us.</a>
   </div>
 </template>
 

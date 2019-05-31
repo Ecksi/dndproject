@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1>A group of friends with no idea how to play, bumbling their way through the game.</h1>
+    <h1 class="sub-header-text">
+      A group of friends with no idea how to play, bumbling their way through the game.
+    </h1>
   </div>
 </template>
 

@@ -1,4 +1,4 @@
-# ![rawr](./public/assets/dnd.png) D&D Projecr ![rawr](./public/assets/dndmirror.png)
+# ![rawr](./public/assets/dnd.png) D&D Projecr ![rawr](./public/assets/dnd-mirror.png)
 Follow our misadventures as we learn how to play D&D - Also learn how to play D&D yourself with what we have learned along the way.
 
 ## Visit our site on Heroku

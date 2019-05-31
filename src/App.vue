@@ -18,5 +18,11 @@ export default {
 
 
 <style lang="less">
-
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    font-size: 10px;
+  }
 </style>

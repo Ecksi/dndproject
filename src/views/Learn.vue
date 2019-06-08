@@ -2,33 +2,48 @@
   <div>
     <h1 class="sub-header-text">Character sheet playground</h1>
     <div class="paper">
-      <header class="border char-info">
-        <div class="border">Name Block</div>
-        <div class="border">Race / Class Block</div>
+      <header class="char-info">
+        <PlayerName />
+        <PlayerInfo />
       </header>
-      <main class="border bottom-block">
-        <section class="border char-stats">
-          <div class="border attributes-skills">
-            <div class="border attributes">
-              <div class="border">Strength</div>
-              <div class="border">Dexterity</div>
-              <div class="border">Constitution</div>
-              <div class="border">Intelligence</div>
-              <div class="border">Wisdom</div>
-              <div class="border">Charisma</div>
+
+      <main class="bottom-block">
+        <section class="char-traits">
+          <!-- This can be an organism -->
+          <div class="attributes-skills">
+            <Attributes />
+            <div class="skillsauce">
+              <Bonus :type="'inspiration'"></Bonus>
+              <Bonus :type="'proficiency'"></Bonus>
+              <SavingThrows />
+              <Skills />
             </div>
-            <div class="border skills">skills & saving throws</div>
           </div>
-          <div class="border prof-lang">Prof & Langs</div>
+
+          <div class="profsauce">
+          <!-- This can be an organism -->
+            <Bonus :type="'perception'"></Bonus>
+            <OtherProfs />
+          </div>
         </section>
-        <section class="border char-gear">
-          <div class="border">AC - Init - HP</div>
-          <div class="border">Attacks & Spellcasting</div>
-          <div class="border">Equipment</div>
+
+
+        <section class="moo-cow char-traits">
+          <!-- This can be an organism -->
+          <div class="live-block">
+            <ArmorInitSpeed />
+            <HitPointBoxes />
+            <HitDiceDeathSaves />
+          </div>
+          <AttacksAndSpells />
+          <Equipment />
         </section>
-        <section class="border char-traits">
-          <div class="border">Background Traits</div>
-          <div class="border">Class Traits</div>
+
+        <section class="char-traits wizzle">
+          <!-- This can be an organism -->
+          <BackgroundTraits />
+          <RoundBox>Features & Traits</RoundBox>
+          <RoundBox>Portrait</RoundBox>
         </section>
       </main>
     </div>
@@ -36,8 +51,39 @@
 </template>
 
 <script>
+import ArmorInitSpeed from '@/components/molecules/characterSheet/ArmorInitSpeed';
+import AttacksAndSpells from '@/components/atoms/characterSheet/AttacksAndSpells';
+import Attributes from '@/components/molecules/characterSheet/Attributes';
+import BackgroundTraits from '@/components/molecules/characterSheet/BackgroundTraits';
+import Bonus from '@/components/atoms/characterSheet/Bonus';
+import Equipment from '@/components/molecules/characterSheet/Equipment';
+import HitDiceDeathSaves from '@/components/atoms/characterSheet/HitDiceDeathSaves';
+import HitPointBoxes from '@/components/molecules/characterSheet/HitPointBoxes';
+import OtherProfs from '@/components/atoms/characterSheet/OtherProfs';
+import PlayerInfo from '@/components/atoms/characterSheet/PlayerInfo';
+import PlayerName from '@/components/atoms/characterSheet/PlayerName';
+import RoundBox from '@/components/atoms/characterSheet/RoundBox';
+import SavingThrows from '@/components/molecules/characterSheet/SavingThrows';
+import Skills from '@/components/molecules/characterSheet/Skills';
+
 export default {
   name: 'Learn',
+  components: {
+    ArmorInitSpeed,
+    AttacksAndSpells,
+    Attributes,
+    BackgroundTraits,
+    Bonus,
+    Equipment,
+    HitDiceDeathSaves,
+    HitPointBoxes,
+    OtherProfs,
+    PlayerInfo,
+    PlayerName,
+    RoundBox,
+    SavingThrows,
+    Skills,
+  }
 };
 </script>
 
@@ -46,84 +92,59 @@ export default {
     border: 1px #333 solid;
     display: flex;
     flex-direction: column;
-    height: 900px;
+    height: 1100px;
     margin: 0 auto;
     padding: 15px;
-    width: 75%;
+    // width: 800px;
+    width: 840px;
   }
 
   .border {
     border: 1px #333 solid;
   }
 
-  .char-info {
-    display: flex;
-    height: 100px;
-    justify-content: space-between;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    width: 100%;
-
-    div {
-      width: 50%;
-    }
-  }
-
   .bottom-block {
     display: flex;
-    height: 800px;
+    height: 90%;
   }
 
   .attributes-skills {
     display: flex;
-    height: 100%;
-    width: 100%;
-
-    div {
-      height: 100%;
-    }
-
-    .attributes {
-      width: 30%;
-    }
-
-    .skills {
-      width: 70%;
-    }
+    margin-bottom: 10px;
   }
 
-  .attributes {
-    display: flex;
-    flex-direction: column;
+  .skillsauce {
+    padding: 0 10px;
   }
 
-  .char-stats, .char-gear, .char-traits {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    margin: 0 auto;
-    width: 33%;
+  .profsauce > div:last-child {
+    margin-top: 10px;
   }
 
-  .char-stats {
-    .attributes-skills {
-      height: 70%;
-    }
-
-    .prof-lang {
-      height: 30%;
-    }
+  .skillsauce > div:not(:last-child) {
+    margin-bottom: 10.75px;
   }
 
-  .char-gear {
-    div {
-      height: 33%;
-    }
+  .live-block {
+    background-color: #ddd;
+    border-radius: 10px;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+  }
+
+  .moo-cow > div:last-child {
+    margin-top: 10px;
+  }
+
+  .moo-cow {
+    margin-right: 10px
   }
 
   .char-traits {
-    div {
-      height: 50%;
-    }
+    // width: 33%;
+  }
+
+  .wizzle > div:not(:last-child) {
+    margin-bottom: 10px;
   }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <textarea name="otherProfs" class="main-text" placeholder="Add Proficiences"></textarea>
-    <label for="otherProfs" class="subtext">Other Proficiencies and Languages</label>
+    <label for="otherProfs" class="sub-text">Other Proficiencies and Languages</label>
   </div>
 </template>
 
@@ -22,7 +22,7 @@
     width: 265px;
   }
 
-  .subtext {
+  .sub-text {
     background-color: white;
     border: 1px solid black;
     border-radius: 0 0 10px 10px;

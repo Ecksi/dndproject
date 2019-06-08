@@ -20,7 +20,6 @@ export default {
 <style lang="less">
   html, body {
     background-color: #f5f5f5;
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: Helvetica, sans-serif;
@@ -36,6 +35,10 @@ export default {
   input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
+  }
+
+  ::placeholder {
+    color: #bbb;
   }
 
   .center-text {

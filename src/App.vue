@@ -53,4 +53,18 @@ export default {
     margin-top: 20px;
     text-align: center;
   }
+
+  @media print {
+  body * {
+    visibility: hidden;
+  }
+  .paper, .paper * {
+    visibility: visible;
+  }
+  .paper {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
 </style>

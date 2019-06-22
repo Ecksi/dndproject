@@ -22,6 +22,11 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/Players.vue'),
     },
     {
+      path: '/feats',
+      name: 'feats',
+      component: () => import('./views/Feats.vue'),
+    },
+    {
       path: '/learn',
       name: 'learn',
       component: () => import('./views/Learn.vue'),

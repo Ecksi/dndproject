@@ -8,6 +8,8 @@
     <section class="header-links">
       <router-link to="/players">The Players</router-link>
       <span class="spacer">&#9672;</span>
+      <router-link to="/feats">Your Feats</router-link>
+      <span class="spacer">&#9672;</span>
       <router-link to="/learn">Learn to Play</router-link>
       <span class="spacer">&#9672;</span>
       <router-link to="/resources">Resources</router-link>

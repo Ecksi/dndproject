@@ -16,7 +16,6 @@ export default {
 };
 </script>
 
-
 <style lang="less">
   html, body {
     background-color: #f5f5f5;
@@ -37,14 +36,32 @@ export default {
     margin: 0;
   }
 
+  textarea {
+    resize: none;
+  }
+
   ::placeholder {
-    color: #bbb;
+    color: #888;
   }
 
   .center-text {
     display: inherit;
     font-size: 1.6rem;
     text-align: center;
+  }
+
+  .center-caps {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .border {
+    border: 1px solid black;
+    border-radius: 10px;
   }
 
   .sub-header-text {

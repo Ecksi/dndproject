@@ -15,9 +15,7 @@
 
 <style lang="less" scoped>
   .round-box {
-    // background-color: white;
-    // opacity: 0.7;
-    height: 232px;
+    height: 496px;
     padding: 10px;
     width: 236px;
   }
@@ -26,7 +24,7 @@
     background-color: transparent;
     border: none;
     padding: 5px;
-    height: 207px;
+    height: 470px;
     width: 225px;
   }
 

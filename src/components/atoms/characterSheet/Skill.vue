@@ -36,6 +36,7 @@
   }
 
   .skill-modifier {
+    background-color: transparent;
     border: none;
     border-bottom: 1px solid black;
     font-size: 1.2rem;

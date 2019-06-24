@@ -31,15 +31,15 @@
 
 <script>
   export default {
-    name: 'PlayerInfo'
+    name: 'PlayerInfo',
+    props: {
+      char_info: Object
+    }
   }
 </script>
 
 <style lang="less" scoped>
   .player-info {
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 10px;
     display: inline-block;
     height: 95px;
     margin-bottom: 20px;
@@ -60,6 +60,7 @@
   }
 
   .player-input {
+    background-color: transparent;
     border: none;
     border-bottom: 1px solid #333;
     font-size: 1.6rem;
@@ -72,6 +73,6 @@
     display: block;
     font-size: 1.2rem;
     margin-bottom: 5px;
-    text-transform: uppercase;
+    text-align: left;
   }
 </style>

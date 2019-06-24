@@ -26,7 +26,7 @@
       DeathSaves
     },
     props: {
-      something: String
+      hit_dice: String
     }
   }
 </script>
@@ -37,9 +37,6 @@
   }
 
   .box {
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 10px;
     height: 82px;
     width: 120px;
   }
@@ -51,6 +48,11 @@
   .hd-text {
     color: #bbb;
     margin: 2.5px;
+    margin-left: 9px;
+  }
+
+  .num-of-dice, .hd-number {
+    background-color: transparent;
   }
 
   .hd-number {
@@ -66,17 +68,15 @@
   .num-of-dice {
     border: none;
     font-size: 1.8rem;
-    height: 38px;
+    height: 35px;
     padding: 1px;
     text-align: center;
-    width: 108px;
+    width: 118px;
   }
 
   .sub-arf {
     display: inline-block;
     padding: 2px;
-    text-align: center;
-    text-transform: uppercase;
     width: 100%;
   }
 
@@ -89,6 +89,6 @@
   }
 
   .death-saves-foo > div:nth-child(2) {
-    padding-bottom: 15px;
+    padding-bottom: 12px;
   }
 </style>

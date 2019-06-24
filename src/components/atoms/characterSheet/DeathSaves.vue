@@ -1,6 +1,6 @@
 <template>
   <div class="death-saves">
-    <section class="save-text">
+    <section class="save-text center-caps">
       <slot></slot>
     </section>
     <section class="foo">
@@ -28,7 +28,6 @@
     letter-spacing: 0.2px;
     line-height: 17px;
     text-align: right;
-    text-transform: uppercase;
     width: 55px;
   }
 

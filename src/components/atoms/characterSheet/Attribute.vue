@@ -16,11 +16,8 @@
 
 <style lang="less" scoped>
   .attribute {
-    background: white;
-    border: 1px solid #333;
-    border-radius: 10px;
     margin-bottom: 20px;
-    height: 80px;
+    height: 85px;
     width: 70px;
 
     input {
@@ -35,12 +32,11 @@
     font-weight: bold;
     letter-spacing: 0.5px;
     padding-top: 7px;
-    text-align: center;
-    text-transform: uppercase;
   }
 
 
   .modifier-stat {
+    background-color: transparent;
     border: none;
     font-size: 4rem;
     padding-bottom: 5px;
@@ -48,7 +44,7 @@
   }
 
   .base-stat {
-    border: 1px solid black;
+    background-color: #e0d5be;
     border-radius: 20px;
     font-size: 1.6rem;
     width: 30px;

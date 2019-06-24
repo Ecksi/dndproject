@@ -13,7 +13,6 @@
 
 <style lang="less" scoped>
   .player-name {
-    background-color: #e1e1e1;
     border: 1px solid black;
     border-right: none;
     border-radius: 10px 0 0 10px;
@@ -27,8 +26,8 @@
   }
 
   .char-input {
-    border: none;
-    border-radius: 3px;
+    background-color: transparent;
+    border-radius: 5px;
     font-size: 1.6rem;
     line-height: 1.15;
     margin: 5px;
@@ -41,6 +40,6 @@
     font-size: 1.2rem;
     letter-spacing: 0.1px;
     padding-left: 12px;
-    text-transform: uppercase;
+    text-align: left;
   }
 </style>

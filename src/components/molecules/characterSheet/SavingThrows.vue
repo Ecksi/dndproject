@@ -25,19 +25,11 @@
 
 <style lang="less" scoped>
   .skills {
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 10px;
     width: 178px;
   }
 
   .skills-block {
     padding-left: 10px;
     padding-top: 10px;
-  }
-
-  .skill-box-text {
-    text-align: center;
-    text-transform: uppercase;
   }
 </style>

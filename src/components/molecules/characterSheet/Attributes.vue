@@ -22,10 +22,8 @@
 
 <style lang="less" scoped>
   .attributes {
-    background-color: #bbb;
-    border-radius: 10px;
     height: 612px;
-    padding: 15px 0 0.1px 10px;
+    padding: 0 0 0.1px 10px;
     width: 85px;
   }
 </style>

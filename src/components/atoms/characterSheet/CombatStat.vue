@@ -21,8 +21,7 @@
   }
 
   .stat-modifier {
-    border: 1px solid black;
-    border-radius: 10px;
+    background-color: transparent;
     display: block;
     font-size: 3.5rem;
     height: 64px;
@@ -31,7 +30,6 @@
   }
 
   .sub-text {
-    background-color: white;
     border: 1px solid black;
     border-radius: 0 0 10px 10px;
     border-top: none;
@@ -41,8 +39,6 @@
     letter-spacing: 0.2px;
     padding: 5px 0;
     position: relative;
-    text-align: center;
-    text-transform: uppercase;
     width: 50px;
   }
 </style>

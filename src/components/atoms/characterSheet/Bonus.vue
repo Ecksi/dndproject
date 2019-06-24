@@ -39,7 +39,6 @@
 
   input {
     appearance: none;
-    background-color: white;
     border: 1px solid black;
     border-radius: 7px;
     font-size: 1.5rem;
@@ -62,15 +61,13 @@
   }
 
   .shared-box {
-    background-color: white;
     border: 1px solid black;
     border-left: none;
+    border-radius: 0 5px 5px 0;
     bottom: 11px;
     display: inline-block;
     padding: 4px 0;
     position: relative;
-    text-align: center;
-    text-transform: uppercase;
     width: 149px;
   }
 
@@ -80,5 +77,9 @@
 
   .long-text {
     width: 255px;
+  }
+
+  .shared-input {
+    background-color: transparent;
   }
 </style>

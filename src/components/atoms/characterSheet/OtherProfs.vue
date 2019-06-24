@@ -13,17 +13,15 @@
 
 <style lang="less" scoped>
   .main-text {
-    border: 1px solid black;
-    border-radius: 10px;
+    background-color: transparent;
     display: block;
+    font-size: 1.4rem;
     height: 260px;
     padding: 10px;
-    resize: none;
     width: 265px;
   }
 
   .sub-text {
-    background-color: white;
     border: 1px solid black;
     border-radius: 0 0 10px 10px;
     border-top: none;
@@ -32,8 +30,6 @@
     left: 20px;
     padding: 4px 0;
     position: relative;
-    text-align: center;
-    text-transform: uppercase;
     width: 245px;
   }
 </style>

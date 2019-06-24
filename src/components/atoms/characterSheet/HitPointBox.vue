@@ -30,7 +30,6 @@
   }
 
   .box {
-    background-color: white;
     border: 1px solid black;
     width: 256px;
   }
@@ -41,6 +40,10 @@
 
   .box-bottom {
     border-radius: 0 0 10px 10px;
+  }
+
+  .hp-max, .hit-points {
+    background-color: transparent;
   }
 
   .hp-max-wrapper {
@@ -70,8 +73,8 @@
 
   .hit-points {
     border: none;
-    font-size: 2em;
-    padding: 20px 0;
+    font-size: 3em;
+    padding: 14px 0;
     text-align: center;
     width: 256px;
   }
@@ -79,7 +82,5 @@
   .sub-text {
     font-weight: bold;
     padding-bottom: 5px;
-    text-align: center;
-    text-transform: uppercase;
   }
 </style>

@@ -21,9 +21,6 @@
 
 <style lang="less" scoped>
   .equipment {
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 10px;
     display: flex;
     height: 213px;
     padding: 10px;
@@ -35,17 +32,18 @@
   }
 
   .equipment-list {
+    background-color: transparent;
     border: none;
     height: 180px;
     padding: 10px;
-    resize: none;
+    width: 170px;
   }
 
   .equipment-text {
     display: inline-block;
     font-size: 1.2rem;
     padding-left: 10px;
-    text-transform: uppercase;
+    text-align: left;
     width: 100%;
   }
 </style>

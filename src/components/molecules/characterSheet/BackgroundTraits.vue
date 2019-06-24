@@ -26,23 +26,15 @@
 </script>
 
 <style lang="less" scoped>
-  .bg-traits {
-    background-color: #bbb;
-    border-radius: 10px;
-    padding: 10px;
-    width: 236px;
-  }
-
   .bg-traits > section:not(:last-child) {
     margin-bottom: 10px;
   }
 
   .box {
-    background-color: white;
     border: 1px solid black;
     height: 94px;
     padding: 5px;
-    width: 224px;
+    width: 245px;
   }
 
   .box-top {
@@ -54,19 +46,17 @@
   }
 
   .bg-input {
+    background-color: transparent;
     border: none;
-    font-size: 2em;
+    font-size: 1.2em;
     height: 58px;
     padding: 10px;
-    resize: none;
-    width: 204px;
+    width: 226px;
   }
 
   .bg-label {
     display: inline-block;
     margin-top: 3px;
-    text-align: center;
-    text-transform: uppercase;
     width: 100%;
   }
 </style>

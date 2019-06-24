@@ -17,10 +17,9 @@
 
 <style lang="less" scoped>
   .portrait {
-    // background-color: white;
     height: 212px;
     padding: 10px;
-    width: 236px;
+    width: 235px;
   }
 
   .box-input {

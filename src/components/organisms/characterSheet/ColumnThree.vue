@@ -1,8 +1,8 @@
 <template>
   <div class="wizzle">
-    <BackgroundTraits />
+    <BackgroundTraits :bg_traits="bg_traits" />
     <FeatureTraits />
-    <Portrait />
+    <!-- <Portrait :portrait="portrait" /> -->
   </div>
 </template>
 
@@ -17,6 +17,10 @@ import Portrait from '@/components/atoms/characterSheet/Portrait';
       BackgroundTraits,
       FeatureTraits,
       Portrait
+    },
+    props: {
+      bg_traits: Object,
+      portrait: String
     }
   }
 </script>

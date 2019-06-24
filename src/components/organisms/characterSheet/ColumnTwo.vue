@@ -1,12 +1,12 @@
 <template>
   <div class="moo-cow">
     <section class="live-block">
-      <ArmorInitSpeed />
-      <HitPointBoxes />
-      <HitDiceDeathSaves />
+      <ArmorInitSpeed :stats="stats" :init="init" />
+      <HitPointBoxes :hit_points="stats.hit_points" />
+      <HitDiceDeathSaves :hit_dice="stats.hit_dice" />
     </section>
     <AttacksAndSpells />
-    <Equipment />
+    <Equipment :currency="currency" />
   </div>
 </template>
 
@@ -25,15 +25,18 @@
       Equipment,
       HitDiceDeathSaves,
       HitPointBoxes,
+    },
+    props: {
+      stats: Object,
+      init: Number,
+      currency: Object
     }
   }
 </script>
 
 <style lang="less" scoped>
   .live-block {
-    background-color: #ddd;
-    border-radius: 10px;
-    padding: 15px 10px;
+    padding: 0 10px;
     margin-bottom: 10px;
   }
 

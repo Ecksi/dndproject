@@ -1,17 +1,17 @@
 <template>
   <div>
     <section class="attributes-skills">
-      <Attributes />
+      <Attributes :attributes="attributes" :modifiers="modifiers" />
       <div class="skillsauce">
         <Bonus :type="'inspiration'"></Bonus>
-        <Bonus :type="'proficiency'"></Bonus>
-        <SavingThrows />
-        <Skills />
+        <Bonus :type="'proficiency'" :prof_bonus="prof_bonus"></Bonus>
+        <SavingThrows :modifiers="modifiers" :saving_throws="skills.saving_throws" />
+        <Skills  :modifiers="modifiers" :skills="skills.skills" />
       </div>
     </section>
     <section class="profsauce">
-      <Bonus :type="'perception'"></Bonus>
-      <OtherProfs />
+      <Bonus :type="'perception'" :passive_perception="10+modifiers.wis"></Bonus>
+      <OtherProfs :proficiences="skills.proficiences" />
     </section>
   </div>
 </template>
@@ -31,6 +31,17 @@ import Skills from '@/components/molecules/characterSheet/Skills';
       OtherProfs,
       SavingThrows,
       Skills
+    },
+    props: {
+      attributes: Object,
+      modifiers: Object,
+      skills: Object,
+      level: String
+    },
+    computed: {
+      prof_bonus: function() {
+        return 1 + (Math.ceil(this.level * .25));
+      }
     }
   }
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div class="portrait border">
     <div class="box-input">
-      <img src="../../../../public/assets/melonlord.png" class="img-foo" alt="">
+      <img src="" class="img-foo" alt="">
     </div>
     <span class="box-text center-caps">
       Portrait

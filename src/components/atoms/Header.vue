@@ -6,11 +6,11 @@
       </router-link>
     </section>
     <section class="header-links">
-      <router-link to="/players">The Players</router-link>
+      <router-link to="/players">The Crew</router-link>
       <span class="spacer">&#9672;</span>
       <router-link to="/feats">Your Feats</router-link>
       <span class="spacer">&#9672;</span>
-      <router-link to="/learn">Learn to Play</router-link>
+      <router-link to="/learn">Quick Reference</router-link>
       <span class="spacer">&#9672;</span>
       <router-link to="/resources">Resources</router-link>
       <span class="spacer">&#9672;</span>

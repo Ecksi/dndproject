@@ -1,0 +1,73 @@
+{
+  "char_info": {
+    "char_name": "Del",
+    "player_name": "Doc",
+    "race": "Illuskan Human",
+    "class": "Rogue",
+    "level": "1",
+    "alignment": "Chaotic Neutral",
+    "background": "Charlatan",
+    "experience": "495"
+  },
+  "char_attributes": {
+    "str": "13",
+    "dex": "18",
+    "con": "14",
+    "int": "16",
+    "wis": "11",
+    "cha": "15"
+  },
+  "char_skills": {
+    "saving_throws": ["dex", "int"],
+    "skills": ["acrobatics", "deception", "intimidation", "investigation", "persuasion", "sleight"],
+    "proficiences": {
+      "armor": ["Light"],
+      "weapons": ["Simple", " Hand Crossbows", " Long Sword", " Short Sword", " Rapiers"],
+      "tools": ["Thieves tools", " Disguise Kit", " Forgery Kit"],
+      "languages": []
+    }
+  },
+  "char_stats": {
+    "armor": "15",
+    "speed": "30",
+    "hit_points": "10",
+    "hit_dice": "1d8"
+  },
+  "equipped": {
+    "first_slot": {
+      "name": "",
+      "atk_bonus": "",
+      "damage_type": ""
+    },
+    "second_slot": {
+      "name": "",
+      "atk_bonus": "",
+      "damage_type": ""
+    },
+    "third_slot": {
+      "name": "",
+      "atk_bonus": "",
+      "damage_type": ""
+    },
+    "fourth_slot": {
+      "name": "",
+      "atk_bonus": "",
+      "damage_type": ""
+    }
+  },
+  "equipment": [],
+  "currency": {
+    "cp": "146",
+    "sp": "27",
+    "ep": "",
+    "gp": "41",
+    "pp": ""
+  },
+  "bg_traits": {
+    "personality": "I keep multiple holy symbols on me and invoke whatever deity might come in useful at any given moment.",
+    "ideal": "I never target people who can't afford to lose a few coins.",
+    "bond": "Somewhere out there, I have a child who doesn't know me. I'm making the world better for him or her.",
+    "flaw": "I can't resist swindling people who are more powerful than me."
+  },
+  "feats": []
+}

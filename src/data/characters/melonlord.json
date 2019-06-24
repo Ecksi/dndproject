@@ -1,0 +1,73 @@
+{
+  "char_info": {
+    "char_name": "Melon Lord",
+    "player_name": "Seamus",
+    "race": "Dark Elf",
+    "class": "Tempest Cleric",
+    "level": "1",
+    "alignment": "Chaotic Evil",
+    "background": "Urchin",
+    "experience": "495"
+  },
+  "char_attributes": {
+    "str": "14",
+    "dex": "11",
+    "con": "10",
+    "int": "7",
+    "wis": "15",
+    "cha": "12"
+  },
+  "char_skills": {
+    "saving_throws": ["wis", "cha"],
+    "skills": ["history", "perception", "religion", "sleight", "stealth"],
+    "proficiences": {
+      "armor": ["Light", "Medium", "Heavy", "Shields"],
+      "weapons": ["Simple", " Martial"],
+      "tools": ["Thieves tools", " Disguise Kit"],
+      "languages": ["Common", " Elvish"]
+    }
+  },
+  "char_stats": {
+    "armor": "18",
+    "speed": "30",
+    "hit_points": "8",
+    "hit_dice": "1d8"
+  },
+  "equipped": {
+    "first_slot": {
+      "name": "",
+      "atk_bonus": "",
+      "damage_type": ""
+    },
+    "second_slot": {
+      "name": "",
+      "atk_bonus": "",
+      "damage_type": ""
+    },
+    "third_slot": {
+      "name": "",
+      "atk_bonus": "",
+      "damage_type": ""
+    },
+    "fourth_slot": {
+      "name": "",
+      "atk_bonus": "",
+      "damage_type": ""
+    }
+  },
+  "equipment": [],
+  "currency": {
+    "cp": "123",
+    "sp": "38",
+    "ep": "",
+    "gp": "35",
+    "pp": ""
+  },
+  "bg_traits": {
+    "personality": "I don't like to bathe.",
+    "ideal": "The rich need to be shown what life and death are like in the gutters.",
+    "bond": "No one else should have to endure the hardships I've been through.",
+    "flaw": "It's not stealing if I need it more than someone else."
+  },
+  "feats": []
+}

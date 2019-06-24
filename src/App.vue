@@ -18,7 +18,9 @@ export default {
 
 <style lang="less">
   html, body {
-    background-color: #f5f5f5;
+    background-image: url('../public/assets/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     padding: 0;
     font-family: Helvetica, sans-serif;
@@ -66,8 +68,6 @@ export default {
 
   .sub-header-text {
     font-size: 2.8rem;
-    margin-bottom: 30px;
-    margin-top: 20px;
     text-align: center;
   }
 

@@ -1,7 +1,7 @@
 <template>
   <div class="skill">
-    <input class="skill-proficient" type="checkbox">
-    <input class="skill-modifier" type="number" placeholder="+0">
+    <input class="skill-proficient" type="checkbox" :checked="proficient">
+    <input class="skill-modifier" type="number" placeholder="+0" :value="modifier">
     <div class="skill-name">
       <slot></slot>
       <div class="skill-name-stat">
@@ -13,7 +13,11 @@
 
 <script>
   export default {
-    name: 'Skill'
+    name: 'Skill',
+    props: {
+      proficient: Boolean,
+      modifier: String
+    }
   }
 </script>
 
@@ -36,6 +40,7 @@
   }
 
   .skill-modifier {
+    background-color: transparent;
     border: none;
     border-bottom: 1px solid black;
     font-size: 1.2rem;

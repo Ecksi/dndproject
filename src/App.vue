@@ -16,10 +16,11 @@ export default {
 };
 </script>
 
-
 <style lang="less">
   html, body {
-    background-color: #f5f5f5;
+    background-image: url('../public/assets/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     padding: 0;
     font-family: Helvetica, sans-serif;
@@ -37,8 +38,12 @@ export default {
     margin: 0;
   }
 
+  textarea {
+    resize: none;
+  }
+
   ::placeholder {
-    color: #bbb;
+    color: #888;
   }
 
   .center-text {
@@ -47,10 +52,36 @@ export default {
     text-align: center;
   }
 
+  .center-caps {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .border {
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+
   .sub-header-text {
     font-size: 2.8rem;
-    margin-bottom: 30px;
-    margin-top: 20px;
     text-align: center;
   }
+
+  @media print {
+  body * {
+    visibility: hidden;
+  }
+  .paper, .paper * {
+    visibility: visible;
+  }
+  .paper {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
 </style>

@@ -2,21 +2,21 @@
   <div>
     <section v-show="type === 'inspiration'">
       <input type="checkbox" name="inspiration">
-      <div class="shared-box">
+      <div class="shared-box center-caps">
         <label for="inspiration">Inspiration</label>
       </div>
     </section>
 
     <section v-show="type === 'proficiency'">
-      <input type="number" placeholder="+2" name="prof-bonus">
-      <div class="shared-box text-box">
+      <input class="shared-input" type="number" placeholder="+2" name="prof-bonus" :value="prof_bonus">
+      <div class="shared-box text-box center-caps">
         <label for="prof-bonus">Proficiency Bonus</label>
       </div>
     </section>
 
     <section v-show="type === 'perception'">
-      <input type="number" placeholder="10" name="passive-wisdom">
-      <div class="shared-box text-box long-text">
+      <input class="shared-input" type="number" placeholder="10" name="passive-wisdom" :value="passive_perception">
+      <div class="shared-box text-box long-text center-caps">
         <label for="passive-wisdom">Passive Wisdom (Perception)</label>
       </div>
     </section>
@@ -27,7 +27,9 @@
   export default {
     name: 'Bonus',
     props: {
-      type: String
+      type: String,
+      prof_bonus: String,
+      passive_perception: String
     }
   }
 </script>
@@ -39,7 +41,6 @@
 
   input {
     appearance: none;
-    background-color: white;
     border: 1px solid black;
     border-radius: 7px;
     font-size: 1.5rem;
@@ -62,15 +63,13 @@
   }
 
   .shared-box {
-    background-color: white;
     border: 1px solid black;
     border-left: none;
+    border-radius: 0 5px 5px 0;
     bottom: 11px;
     display: inline-block;
     padding: 4px 0;
     position: relative;
-    text-align: center;
-    text-transform: uppercase;
     width: 149px;
   }
 
@@ -80,5 +79,9 @@
 
   .long-text {
     width: 255px;
+  }
+
+  .shared-input {
+    background-color: transparent;
   }
 </style>

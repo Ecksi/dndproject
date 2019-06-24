@@ -1,41 +1,37 @@
 <template>
-  <div class="round-box">
+  <div class="round-box border">
     <textarea name="" class="box-input"></textarea>
-    <label for="" class="box-text">
-      <slot></slot>
+    <label for="" class="box-text center-caps">
+      Features & Traits
     </label>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'RoundBox'
+    name: 'FeatureTraits'
   }
 </script>
 
 <style lang="less" scoped>
   .round-box {
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 10px;
-    height: 222px;
+    height: 496px;
     padding: 10px;
     width: 236px;
   }
 
   .box-input {
+    background-color: transparent;
     border: none;
     padding: 5px;
-    height: 200px;
-    resize: none;
+    height: 470px;
     width: 225px;
   }
 
   .box-text {
     display: inline-block;
+    font-size: 1.2rem;
     margin-top: 3px;
-    text-align: center;
-    text-transform: uppercase;
     width: 100%;
   }
 </style>

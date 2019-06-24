@@ -1,19 +1,21 @@
 <template>
   <div class="player-name">
-    <input name="char-name" type="text" class="char-input" placeholder="Bort McSimpson">
-    <label for="char-name" class="char-label">Character Name</label>
+    <input name="char-name" type="text" class="char-input" placeholder="Bort McSimpson" :value="name">
+    <label for="char-name" class="char-label center-caps">Character Name</label>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'PlayerName'
+    name: 'PlayerName',
+    props: {
+      name: String
+    }
   }
 </script>
 
 <style lang="less" scoped>
   .player-name {
-    background-color: #e1e1e1;
     border: 1px solid black;
     border-right: none;
     border-radius: 10px 0 0 10px;
@@ -27,8 +29,8 @@
   }
 
   .char-input {
-    border: none;
-    border-radius: 3px;
+    background-color: transparent;
+    border-radius: 5px;
     font-size: 1.6rem;
     line-height: 1.15;
     margin: 5px;
@@ -41,6 +43,6 @@
     font-size: 1.2rem;
     letter-spacing: 0.1px;
     padding-left: 12px;
-    text-transform: uppercase;
+    text-align: left;
   }
 </style>

@@ -3,14 +3,14 @@
     <section v-show="hpBox === 'top'" class="box box-top">
       <div class="hp-max-wrapper">
         <label for="hp-max" class="hp-max-label">Hit Point Maximum</label>
-        <input type="number" name="hp-max" class="hp-max" placeholder="10">
+        <input type="text" name="hp-max" class="hp-max" placeholder="10" :value="hit_points">
       </div>
-      <input type="number" name="hp-current" class="hit-points">
-      <label for="hp-current" class="sub-text">Current Hit Points</label>
+      <input type="text" name="hp-current" class="hit-points" :value="hit_points">
+      <label for="hp-current" class="sub-text center-caps">Current Hit Points</label>
     </section>
     <section v-show="hpBox === 'bot'" class="box box-bottom">
       <input type="number" name="hp-temp" class="hit-points">
-      <label for="hp-temp" class="sub-text">Temporary Hit Points</label>
+      <label for="hp-temp" class="sub-text center-caps">Temporary Hit Points</label>
     </section>
   </div>
 </template>
@@ -19,7 +19,8 @@
   export default {
     name: 'HitPointBox',
     props: {
-      hpBox: String
+      hpBox: String,
+      hit_points: String
     }
   }
 </script>
@@ -30,7 +31,6 @@
   }
 
   .box {
-    background-color: white;
     border: 1px solid black;
     width: 256px;
   }
@@ -41,6 +41,10 @@
 
   .box-bottom {
     border-radius: 0 0 10px 10px;
+  }
+
+  .hp-max, .hit-points {
+    background-color: transparent;
   }
 
   .hp-max-wrapper {
@@ -70,8 +74,8 @@
 
   .hit-points {
     border: none;
-    font-size: 2em;
-    padding: 20px 0;
+    font-size: 3em;
+    padding: 14px 0;
     text-align: center;
     width: 256px;
   }
@@ -79,7 +83,5 @@
   .sub-text {
     font-weight: bold;
     padding-bottom: 5px;
-    text-align: center;
-    text-transform: uppercase;
   }
 </style>

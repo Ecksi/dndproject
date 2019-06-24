@@ -1,29 +1,29 @@
 <template>
-  <div class="player-info">
+  <div class="player-info border">
     <ul class="smock">
       <li>
-        <input name="classLevel" type="text" class="player-input" placeholder="Barbarian 2">
-        <label for="classLevel" class="player-label">Class & Level</label>
+        <input name="classLevel" type="text" class="player-input" placeholder="Barbarian 2" :value="`${char_info.class} ${char_info.level}`">
+        <label for="classLevel" class="player-label center-caps">Class & Level</label>
       </li>
       <li>
-        <input name="playerBg" type="text" class="player-input" placeholder="Urchin">
-        <label for="playerBg" class="player-label">Background</label>
+        <input name="playerBg" type="text" class="player-input" placeholder="Urchin" :value="char_info.background">
+        <label for="playerBg" class="player-label center-caps">Background</label>
       </li>
       <li>
-        <input name="playerName" type="text" class="player-input" placeholder="Player McPlayerface">
-        <label for="playerName" class="player-label">Player Name</label>
+        <input name="playerName" type="text" class="player-input" placeholder="Player McPlayerface" :value="char_info.player_name">
+        <label for="playerName" class="player-label center-caps">Player Name</label>
       </li>
       <li>
-        <input name="playerRace" type="text" class="player-input" placeholder="Drow Elf">
-        <label for="playerRace" class="player-label">Race</label>
+        <input name="playerRace" type="text" class="player-input" placeholder="Drow Elf" :value="char_info.race">
+        <label for="playerRace" class="player-label center-caps">Race</label>
       </li>
       <li>
-        <input name="playerAlignment" type="text" class="player-input" placeholder="Chaotic Good">
-        <label for="playerAignment" class="player-label">Alignment</label>
+        <input name="playerAlignment" type="text" class="player-input" placeholder="Chaotic Good" :value="char_info.alignment">
+        <label for="playerAignment" class="player-label center-caps">Alignment</label>
       </li>
       <li>
-        <input name="playerXp" type="text" class="player-input" placeholder="5555">
-        <label for="playerXp" class="player-label">Experience Points</label>
+        <input name="playerXp" type="text" class="player-input" placeholder="5555" :value="char_info.experience">
+        <label for="playerXp" class="player-label center-caps">Experience Points</label>
       </li>
     </ul>
   </div>
@@ -31,15 +31,15 @@
 
 <script>
   export default {
-    name: 'PlayerInfo'
+    name: 'PlayerInfo',
+    props: {
+      char_info: Object
+    }
   }
 </script>
 
 <style lang="less" scoped>
   .player-info {
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 10px;
     display: inline-block;
     height: 95px;
     margin-bottom: 20px;
@@ -60,6 +60,7 @@
   }
 
   .player-input {
+    background-color: transparent;
     border: none;
     border-bottom: 1px solid #333;
     font-size: 1.6rem;
@@ -72,6 +73,6 @@
     display: block;
     font-size: 1.2rem;
     margin-bottom: 5px;
-    text-transform: uppercase;
+    text-align: left;
   }
 </style>

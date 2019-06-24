@@ -1,0 +1,73 @@
+{
+  "char_info": {
+    "char_name": "Thistle",
+    "player_name": "Courtney",
+    "race": "Half-Elf",
+    "class": "Ranger",
+    "level": "1",
+    "alignment": "Chaotic Good",
+    "background": "Hermit",
+    "experience": "495"
+  },
+  "char_attributes": {
+    "str": "9",
+    "dex": "16",
+    "con": "12",
+    "int": "10",
+    "wis": "14",
+    "cha": "10"
+  },
+  "char_skills": {
+    "saving_throws": ["str", "dex"],
+    "skills": ["animal", "medicine", "nature", "religion", "survival"],
+    "proficiences": {
+      "armor": ["Light", " Medium", " Shields"],
+      "weapons": ["Simple", " Martial"],
+      "tools": ["Herbalism Kit"],
+      "languages": ["Commom", " Elvish", " Goblin", " Giant"]
+    }
+  },
+  "char_stats": {
+    "armor": "14",
+    "speed": "30",
+    "hit_points": "11",
+    "hit_dice": "1d10"
+  },
+  "equipped": {
+    "first_slot": {
+      "name": "",
+      "atk_bonus": "",
+      "damage_type": ""
+    },
+    "second_slot": {
+      "name": "",
+      "atk_bonus": "",
+      "damage_type": ""
+    },
+    "third_slot": {
+      "name": "",
+      "atk_bonus": "",
+      "damage_type": ""
+    },
+    "fourth_slot": {
+      "name": "",
+      "atk_bonus": "",
+      "damage_type": ""
+    }
+  },
+  "equipment": [],
+  "currency": {
+    "cp": "146",
+    "sp": "37",
+    "ep": "",
+    "gp": "31",
+    "pp": ""
+  },
+  "bg_traits": {
+    "personality": "I connect everything that happens to me to a grand, cosmic plan.",
+    "ideal": "If you know yourself, there's nothing left to know.",
+    "bond": "I entered seculusion because I loved someone I could not have.",
+    "flaw": "Now that I've returned to the world, I enjoy its delights a little to much."
+  },
+  "feats": []
+}

@@ -1,48 +1,43 @@
 <template>
   <div class="bg-traits">
     <section class="box box-top">
-      <textarea name="bg-personality" class="bg-input"></textarea>
-      <label for="bg-personality" class="bg-label">Personality</label>
+      <textarea name="bg-personality" class="bg-input" :value="bg_traits.personality"></textarea>
+      <label for="bg-personality" class="bg-label center-caps">Personality</label>
     </section>
     <section class="box">
-      <textarea name="bg-ideals" class="bg-input"></textarea>
-      <label for="bg-ideals" class="bg-label">Ideals</label>
+      <textarea name="bg-ideals" class="bg-input" :value="bg_traits.ideal"></textarea>
+      <label for="bg-ideals" class="bg-label center-caps">Ideals</label>
     </section>
     <section class="box">
-      <textarea name="bg-bonds" class="bg-input"></textarea>
-      <label for="bg-bonds" class="bg-label">Bonds</label>
+      <textarea name="bg-bonds" class="bg-input" :value="bg_traits.bond"></textarea>
+      <label for="bg-bonds" class="bg-label center-caps">Bonds</label>
     </section>
     <section class="box box-bottom">
-      <textarea name="bg-flaws" class="bg-input"></textarea>
-      <label for="bg-flaws" class="bg-label">Flaws</label>
+      <textarea name="bg-flaws" class="bg-input" :value="bg_traits.flaw"></textarea>
+      <label for="bg-flaws" class="bg-label center-caps">Flaws</label>
     </section>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'BackgroundTraits'
+    name: 'BackgroundTraits',
+    props: {
+      bg_traits: Object
+    }
   }
 </script>
 
 <style lang="less" scoped>
-  .bg-traits {
-    background-color: #bbb;
-    border-radius: 10px;
-    padding: 10px;
-    width: 236px;
-  }
-
   .bg-traits > section:not(:last-child) {
     margin-bottom: 10px;
   }
 
   .box {
-    background-color: white;
     border: 1px solid black;
     height: 94px;
     padding: 5px;
-    width: 224px;
+    width: 245px;
   }
 
   .box-top {
@@ -54,19 +49,17 @@
   }
 
   .bg-input {
+    background-color: transparent;
     border: none;
-    font-size: 2em;
+    font-size: 1.2em;
     height: 58px;
     padding: 10px;
-    resize: none;
-    width: 204px;
+    width: 226px;
   }
 
   .bg-label {
     display: inline-block;
     margin-top: 3px;
-    text-align: center;
-    text-transform: uppercase;
     width: 100%;
   }
 </style>

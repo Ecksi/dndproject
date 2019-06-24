@@ -1,0 +1,73 @@
+{
+  "char_info": {
+    "char_name": "Gardein Battlehammer",
+    "player_name": "Cameron",
+    "race": "Hill Dwarf",
+    "class": "Sorcerer",
+    "level": "1",
+    "alignment": "Neutral Evil",
+    "background": "Sage - Researcher",
+    "experience": "495"
+  },
+  "char_attributes": {
+    "str": "8",
+    "dex": "13",
+    "con": "15",
+    "int": "10",
+    "wis": "12",
+    "cha": "17"
+  },
+  "char_skills": {
+    "saving_throws": ["con", "cha"],
+    "skills": ["arcana", "history", "insight", "persuasion"],
+    "proficiences": {
+      "armor": [],
+      "weapons": ["Daggers", " Darts", " Slings", " Quarter-Staff", " Hand-Axe", " Battle-Axe", " Light Hammer", " War Hammer", " Light Crossbow"],
+      "tools": ["Brewers Supplies"],
+      "languages": ["Common", " Dwarvish", " Giant", " Orc"]
+    }
+  },
+  "char_stats": {
+    "armor": "11",
+    "speed": "25",
+    "hit_points": "9",
+    "hit_dice": "1d6"
+  },
+  "equipped": {
+    "first_slot": {
+      "name": "",
+      "atk_bonus": "",
+      "damage_type": ""
+    },
+    "second_slot": {
+      "name": "",
+      "atk_bonus": "",
+      "damage_type": ""
+    },
+    "third_slot": {
+      "name": "",
+      "atk_bonus": "",
+      "damage_type": ""
+    },
+    "fourth_slot": {
+      "name": "",
+      "atk_bonus": "",
+      "damage_type": ""
+    }
+  },
+  "equipment": [],
+  "currency": {
+    "cp": "146",
+    "sp": "27",
+    "ep": "",
+    "gp": "41",
+    "pp": ""
+  },
+  "bg_traits": {
+    "personality": "I use polysyllabic words that convey the impression of great erudition.",
+    "ideal": "The goal of a life of study is the betterment of oneself.",
+    "bond": "I have an ancient text that holds terrible secrets that must not fall into the wrong hands.",
+    "flaw": "I speak without thinking through my words, invariably insulting others."
+  },
+  "feats": []
+}

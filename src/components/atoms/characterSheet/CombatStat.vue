@@ -1,7 +1,7 @@
 <template>
   <div class="combat-stat">
-    <input type="number" name="combatStat" class="stat-modifier" :placeholder="phValue">
-    <label for="combatStat" class="sub-text">{{phText}}</label>
+    <input type="number" name="combatStat" class="stat-modifier border" :placeholder="phValue" :value="actualValue">
+    <label for="combatStat" class="sub-text center-caps">{{phText}}</label>
   </div>
 </template>
 
@@ -9,8 +9,9 @@
   export default {
     name: 'CombatStat',
     props: {
-      phValue: String,
-      phText: String
+      phValue: Number,
+      phText: String,
+      actualValue: Number
     }
   }
 </script>
@@ -21,8 +22,7 @@
   }
 
   .stat-modifier {
-    border: 1px solid black;
-    border-radius: 10px;
+    background-color: transparent;
     display: block;
     font-size: 3.5rem;
     height: 64px;
@@ -31,7 +31,6 @@
   }
 
   .sub-text {
-    background-color: white;
     border: 1px solid black;
     border-radius: 0 0 10px 10px;
     border-top: none;
@@ -41,8 +40,6 @@
     letter-spacing: 0.2px;
     padding: 5px 0;
     position: relative;
-    text-align: center;
-    text-transform: uppercase;
     width: 50px;
   }
 </style>

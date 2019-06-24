@@ -1,26 +1,26 @@
 <template>
-  <div class="skills">
+  <div class="skills border">
     <section class="skills-block">
-      <Skill>Acrobatics <template v-slot:attr>(Dex)</template></Skill>
-      <Skill>Animal Handling <template v-slot:attr>(Wis)</template></Skill>
-      <Skill>Arcana <template v-slot:attr>(Int)</template></Skill>
-      <Skill>Athletics <template v-slot:attr>(Str)</template></Skill>
-      <Skill>Deception <template v-slot:attr>(Cha)</template></Skill>
-      <Skill>History <template v-slot:attr>(Int)</template></Skill>
-      <Skill>Insight <template v-slot:attr>(Wis)</template></Skill>
-      <Skill>Intimidation <template v-slot:attr>(Cha)</template></Skill>
-      <Skill>Investigation <template v-slot:attr>(Int)</template></Skill>
-      <Skill>Medicine <template v-slot:attr>(Wis)</template></Skill>
-      <Skill>Nature <template v-slot:attr>(Int)</template></Skill>
-      <Skill>Perception <template v-slot:attr>(Wis)</template></Skill>
-      <Skill>Performance <template v-slot:attr>(Cha)</template></Skill>
-      <Skill>Persuasion <template v-slot:attr>(Cha)</template></Skill>
-      <Skill>Religion <template v-slot:attr>(Int)</template></Skill>
-      <Skill>Sleight of Hand <template v-slot:attr>(Dex)</template></Skill>
-      <Skill>Stealth <template v-slot:attr>(Dex)</template></Skill>
-      <Skill>Survival <template v-slot:attr>(Wis)</template></Skill>
+      <Skill :modifier="modifiers.dex" :proficient="skills.includes('acrobatics')">Acrobatics <template v-slot:attr>(Dex)</template></Skill>
+      <Skill :modifier="modifiers.wis" :proficient="skills.includes('animal')">Animal Handling <template v-slot:attr>(Wis)</template></Skill>
+      <Skill :modifier="modifiers.int" :proficient="skills.includes('arcana')">Arcana <template v-slot:attr>(Int)</template></Skill>
+      <Skill :modifier="modifiers.str" :proficient="skills.includes('athletics')">Athletics <template v-slot:attr>(Str)</template></Skill>
+      <Skill :modifier="modifiers.cha" :proficient="skills.includes('deception')">Deception <template v-slot:attr>(Cha)</template></Skill>
+      <Skill :modifier="modifiers.int" :proficient="skills.includes('history')">History <template v-slot:attr>(Int)</template></Skill>
+      <Skill :modifier="modifiers.wis" :proficient="skills.includes('insight')">Insight <template v-slot:attr>(Wis)</template></Skill>
+      <Skill :modifier="modifiers.cha" :proficient="skills.includes('intimidation')">Intimidation <template v-slot:attr>(Cha)</template></Skill>
+      <Skill :modifier="modifiers.int" :proficient="skills.includes('investigation')">Investigation <template v-slot:attr>(Int)</template></Skill>
+      <Skill :modifier="modifiers.wis" :proficient="skills.includes('medicine')">Medicine <template v-slot:attr>(Wis)</template></Skill>
+      <Skill :modifier="modifiers.int" :proficient="skills.includes('nature')">Nature <template v-slot:attr>(Int)</template></Skill>
+      <Skill :modifier="modifiers.wis" :proficient="skills.includes('perception')">Perception <template v-slot:attr>(Wis)</template></Skill>
+      <Skill :modifier="modifiers.cha" :proficient="skills.includes('performance')">Performance <template v-slot:attr>(Cha)</template></Skill>
+      <Skill :modifier="modifiers.cha" :proficient="skills.includes('persuasion')">Persuasion <template v-slot:attr>(Cha)</template></Skill>
+      <Skill :modifier="modifiers.int" :proficient="skills.includes('religion')">Religion <template v-slot:attr>(Int)</template></Skill>
+      <Skill :modifier="modifiers.dex" :proficient="skills.includes('sleight')">Sleight of Hand <template v-slot:attr>(Dex)</template></Skill>
+      <Skill :modifier="modifiers.dex" :proficient="skills.includes('stealth')">Stealth <template v-slot:attr>(Dex)</template></Skill>
+      <Skill :modifier="modifiers.wis" :proficient="skills.includes('survival')">Survival <template v-slot:attr>(Wis)</template></Skill>
     </section>
-    <h3 class="skill-box-text">Skills</h3>
+    <h3 class="center-caps">Skills</h3>
   </div>
 </template>
 
@@ -28,28 +28,24 @@
   import Skill from '@/components/atoms/characterSheet/Skill';
 
   export default {
-    name: 'SavingThrows',
+    name: 'Skills',
     components: {
       Skill
+    },
+    props: {
+      modifiers: Object,
+      skills: Array
     }
   }
 </script>
 
 <style lang="less" scoped>
   .skills {
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 10px;
     width: 178px;
   }
 
   .skills-block {
     padding-left: 10px;
     padding-top: 10px;
-  }
-
-  .skill-box-text {
-    text-align: center;
-    text-transform: uppercase;
   }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="sub-header-text">
-      A group of friends with no idea how to play, bumbling their way through the game.
+      All hail Molarg
     </h1>
   </div>
 </template>

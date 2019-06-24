@@ -1,0 +1,73 @@
+{
+  "char_info": {
+    "char_name": "Tan-Tan",
+    "player_name": "Sage",
+    "race": "White Dragonborn",
+    "class": "Bard",
+    "level": "1",
+    "alignment": "Chaotic Good",
+    "background": "Sailor",
+    "experience": "495"
+  },
+  "char_attributes": {
+    "str": "14",
+    "dex": "16",
+    "con": "16",
+    "int": "14",
+    "wis": "16",
+    "cha": "19"
+  },
+  "char_skills": {
+    "saving_throws": ["dex", "cha"],
+    "skills": ["athletics", "deception", "medicine", "perception", "performance"],
+    "proficiences": {
+      "armor": ["Light"],
+      "weapons": ["Simple", " Hand Crossbows", " Long Sword", " Short Sword", " Rapiers"],
+      "tools": ["Navigation tools", " Vehicle (water)"],
+      "languages": ["Common", "Draconic"]
+    }
+  },
+  "char_stats": {
+    "armor": "14",
+    "speed": "30",
+    "hit_points": "11",
+    "hit_dice": "1d8"
+  },
+  "equipped": {
+    "first_slot": {
+      "name": "",
+      "atk_bonus": "",
+      "damage_type": ""
+    },
+    "second_slot": {
+      "name": "",
+      "atk_bonus": "",
+      "damage_type": ""
+    },
+    "third_slot": {
+      "name": "",
+      "atk_bonus": "",
+      "damage_type": ""
+    },
+    "fourth_slot": {
+      "name": "",
+      "atk_bonus": "",
+      "damage_type": ""
+    }
+  },
+  "equipment": [],
+  "currency": {
+    "cp": "129",
+    "sp": "39",
+    "ep": "",
+    "gp": "36",
+    "pp": ""
+  },
+  "bg_traits": {
+    "personality": "I stretch the truth for the sake of a good story.",
+    "ideal": "The thing that keeps a ship together is mutual respect between captain and crew.",
+    "bond": "I'm loyal to my captain first,m everything else second.",
+    "flaw": "I'll say anything to avoid having to do extra work."
+  },
+  "feats": []
+}

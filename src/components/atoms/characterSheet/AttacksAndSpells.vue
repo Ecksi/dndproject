@@ -1,5 +1,5 @@
 <template>
-  <div class="attacksAndSpells">
+  <div class="attacksAndSpells border">
     <table class="table-foo">
       <thead>
         <tr>
@@ -25,10 +25,15 @@
           <td><input type="text"></td>
           <td><input type="text"></td>
         </tr>
+        <tr>
+          <td><input type="text"></td>
+          <td><input type="text"></td>
+          <td><input type="text"></td>
+        </tr>
       </tbody>
     </table>
     <textarea name="attacksAndSpells" class="spellText"></textarea>
-    <label for="attacksAndSpells" class="labelText">Attacks & Spellcasting</label>
+    <label for="attacksAndSpells" class="labelText center-caps">Attacks & Spellcasting</label>
   </div>
 </template>
 
@@ -40,10 +45,7 @@
 
 <style lang="less" scoped>
   .attacksAndSpells {
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 10px;
-    height: 285px;
+    height: 315px;
     padding: 10px;
     width: 254px;
   }
@@ -57,7 +59,7 @@
     border-color: grey;
 
     & th {
-      color: #eee;
+      color: #666;
     }
 
     & td {
@@ -74,19 +76,17 @@
   }
 
   .spellText {
+    background-color: transparent;
     border: none;
     display: block;
-    height: 160px;
+    height: 165px;
     padding: 10px;
-    resize: none;
     width: 234px;
   }
 
   .labelText {
     display: inline-block;
     font-size: 1.2rem;
-    text-align: center;
-    text-transform: uppercase;
     width: 100%;
   }
 </style>

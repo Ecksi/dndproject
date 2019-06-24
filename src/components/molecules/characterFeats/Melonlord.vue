@@ -33,8 +33,12 @@
       Character Feats
       <div class="feat-box">
         <Feat>
-          title here
-          <template v-slot:feat_description>description here</template>
+          Channel Divinity
+          <template v-slot:feat_description>You gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects.<br/><br/>When you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Dvinity again.<br/><br/>Beginning at 6th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests.<br/><br/>When you finish a short or long rests, you regain your expended uses.</template>
+        </Feat>
+        <Feat>
+          Channel Divinity: Turn Undead
+          <template v-slot:feat_description>As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.<br/><br/>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willing move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</template>
         </Feat>
       </div>
     </section>
@@ -42,8 +46,12 @@
       Archetype Feats
       <div class="feat-box">
         <Feat>
-          title here
-          <template v-slot:feat_description>description here</template>
+          Wrath of the Storm
+          <template v-slot:feat_description>You can thunderously rebuke attackers. When a creature within 5 feet of you that you can see hits you with an attack, you can use your reaction to cause the creature to make a Dexterity saving throw.<br/><br/>The creature takes 2d8 lightning or thunder damage (your choice) on a failed saving throw, and half as much damage on a successful one.<br/><br/>You can use this feature a number of times equal to your Wisdom modifier. You regain all expended uses when you finish a long rest.</template>
+        </Feat>
+        <Feat>
+          Channel Divinity: Destructive Wrath
+          <template v-slot:feat_description>You wield the power of the storm with unchecked ferocity. When you roll lightning or thunder damage, you can use your Channel Divinity to deal maximum damage, instead of rolling.</template>
         </Feat>
       </div>
     </section>

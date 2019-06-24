@@ -1,0 +1,74 @@
+{
+  "char_info": {
+    "char_name": "",
+    "player_name": "",
+    "race": "",
+    "class": "",
+    "level": "",
+    "alignment": "",
+    "background": "",
+    "experience": ""
+  },
+  "char_attributes": {
+    "str": "",
+    "dex": "",
+    "con": "",
+    "int": "",
+    "wis": "",
+    "cha": ""
+  },
+  "char_skills": {
+    "saving_throws": [],
+    "skills": [],
+    "proficiences": {
+      "armor": [],
+      "weapons": [],
+      "tools": [],
+      "languages": []
+    }
+  },
+  "char_stats": {
+    "armor": "",
+    "speed": "",
+    "hit_points": "",
+    "hit_dice": ""
+  },
+  "equipped": {
+    "first_slot": {
+      "name": "",
+      "atk_bonus": "",
+      "damage_type": ""
+    },
+    "second_slot": {
+      "name": "",
+      "atk_bonus": "",
+      "damage_type": ""
+    },
+    "third_slot": {
+      "name": "",
+      "atk_bonus": "",
+      "damage_type": ""
+    },
+    "fourth_slot": {
+      "name": "",
+      "atk_bonus": "",
+      "damage_type": ""
+    }
+  },
+  "equipment": [],
+  "currency": {
+    "cp": "",
+    "sp": "",
+    "ep": "",
+    "gp": "",
+    "pp": ""
+  },
+  "bg_traits": {
+    "personality": "",
+    "ideal": "",
+    "bond": "",
+    "flaw": ""
+  },
+  "feats": [],
+  "portrait": "../../../../public/assets/"
+}

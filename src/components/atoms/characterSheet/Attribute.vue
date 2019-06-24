@@ -1,16 +1,30 @@
 <template>
-  <div class='attribute'>
-    <div class='attribute-name'>
+  <div class='attribute border'>
+    <div class='attribute-name center-caps'>
       <slot></slot>
     </div>
-    <input class='modifier-stat' type="number" placeholder="10">
-    <input class='base-stat' type="number" placeholder="+0">
+    <input class='modifier-stat' type="number" placeholder="0" :value="modifier">
+    <input class='base-stat border' type="number" placeholder="10" :value="attribute">
   </div>
 </template>
 
 <script>
   export default {
-    name: 'attribute'
+    name: 'attribute',
+    data() {
+      return {
+        numba: this.base,
+      }
+    },
+    props: {
+      attribute: String,
+      modifier: String,
+    },
+    computed: {
+      stat() {
+        return parseInt((this.numba - 10) / 2);
+      }
+    }
   }
 </script>
 

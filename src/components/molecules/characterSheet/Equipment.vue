@@ -1,9 +1,9 @@
 <template>
-  <div class="equipment">
-    <Coins />
+  <div class="equipment border">
+    <Coins :currency="currency" />
     <section class="equip">
       <textarea name="equipment" class="equipment-list" placeholder="Equipment list here"></textarea>
-      <label for="equipment" class="equipment-text">equipment</label>
+      <label for="equipment" class="equipment-text center-caps">Equipment</label>
     </section>
   </div>
 </template>
@@ -15,6 +15,9 @@
     name: 'Equipment',
     components: {
       Coins
+    },
+    props: {
+      currency: Object
     }
   }
 </script>

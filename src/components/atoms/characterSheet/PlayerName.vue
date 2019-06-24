@@ -1,13 +1,16 @@
 <template>
   <div class="player-name">
-    <input name="char-name" type="text" class="char-input" placeholder="Bort McSimpson">
-    <label for="char-name" class="char-label">Character Name</label>
+    <input name="char-name" type="text" class="char-input" placeholder="Bort McSimpson" :value="name">
+    <label for="char-name" class="char-label center-caps">Character Name</label>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'PlayerName'
+    name: 'PlayerName',
+    props: {
+      name: String
+    }
   }
 </script>
 

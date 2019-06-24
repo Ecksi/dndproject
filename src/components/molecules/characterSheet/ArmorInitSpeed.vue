@@ -1,8 +1,8 @@
 <template>
   <div class="armor-init-speed">
-    <CombatStat :phValue="10" :phText="'Armor'" />
-    <CombatStat :phValue="'+0'" :phText="'Initiative'" />
-    <CombatStat :phValue="30" :phText="'Speed'" />
+    <CombatStat :phValue="10" :phText="'Armor'" :actualValue="stats.armor" />
+    <CombatStat :phValue="+0" :phText="'Initiative'" :actualValue="init" />
+    <CombatStat :phValue="30" :phText="'Speed'" :actualValue="stats.speed" />
   </div>
 </template>
 
@@ -13,6 +13,10 @@
     name: 'ArmorInitSpeed',
     components: {
       CombatStat
+    },
+    props: {
+      stats: Object,
+      init: Number
     }
   }
 </script>

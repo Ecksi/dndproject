@@ -1,13 +1,22 @@
 <template>
   <div>
-    <textarea name="otherProfs" class="main-text" placeholder="Add Proficiences"></textarea>
-    <label for="otherProfs" class="sub-text">Other Proficiencies and Languages</label>
+    <textarea name="otherProfs" class="main-text border" placeholder="Add Proficiences" :value="textForm"></textarea>
+    <label for="otherProfs" class="sub-text center-caps">Other Proficiencies and Languages</label>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'OtherProfs'
+    name: 'OtherProfs',
+    props: {
+      proficiences: Object
+    },
+    data() {
+      return {
+        textForm:
+        `Armor: ${this.proficiences.armor}\n\nWeapons: ${this.proficiences.weapons}\n\nTools: ${this.proficiences.tools}\n\nLanguages: ${this.proficiences.languages}`
+      }
+    }
   }
 </script>
 

@@ -1,10 +1,10 @@
 <template>
   <div class="coins">
-    <Coin>cp</Coin>
-    <Coin>sp</Coin>
-    <Coin>gp</Coin>
-    <Coin>ep</Coin>
-    <Coin>pp</Coin>
+    <Coin :currency="currency.cp">cp</Coin>
+    <Coin :currency="currency.sp">sp</Coin>
+    <Coin :currency="currency.ep">ep</Coin>
+    <Coin :currency="currency.gp">gp</Coin>
+    <Coin :currency="currency.pp">pp</Coin>
   </div>
 </template>
 
@@ -15,6 +15,9 @@
     name: 'coins',
     components: {
       Coin
+    },
+    props: {
+      currency: Object
     }
   }
 </script>

@@ -1,43 +1,53 @@
 <template>
   <div>
-    <h1 class="sub-header-text">Meet the players</h1>
-    <span class="center-text">Click on a player for more information</span>
+    <h1 class="sub-header-text">Select your character</h1>
     <section class="char-portrait">
-      <img @click="selectedChar='Del'" src="../../public/assets/del.png" alt="del">
-      <img @click="selectedChar='Gardein Battlehammer'" src="../../public/assets/gardein.png" alt="gardein">
-      <img @click="selectedChar='Melon-Lord'" src="../../public/assets/melonlord.png" alt="melonlord">
-      <img @click="selectedChar='Tan-Tan'" src="../../public/assets/tantan.png" alt="tantan">
-      <img @click="selectedChar='Thistle'" src="../../public/assets/thistle.png" alt="thistle">
+      <img class="image" @click="selectedChar='del'" src="../../public/assets/del.png" alt="del">
+      <img class="image" @click="selectedChar='gardein'" src="../../public/assets/gardein.png" alt="gardein">
+      <img class="image" @click="selectedChar='melonlord'" src="../../public/assets/melonlord.png" alt="melonlord">
+      <img class="image" @click="selectedChar='tantan'" src="../../public/assets/tantan.png" alt="tantan">
+      <img class="image" @click="selectedChar='thistle'" src="../../public/assets/thistle.png" alt="thistle">
     </section>
-    <div>
-      <div v-for="character in characters"
-        :key="generateKey(character)"
-        class="center-text"
-      >
-        <CharacterSheet :character=character :selectedChar="selectedChar" />
-      </div>
-    </div>
+    <section>
+      <CharacterSheet v-if="selectedChar==='del'" :character="del" />
+      <CharacterSheet v-if="selectedChar==='gardein'" :character="gardein"/>
+      <CharacterSheet v-if="selectedChar==='melonlord'" :character="melonlord" />
+      <CharacterSheet v-if="selectedChar==='tantan'" :character="tantan"/>
+      <CharacterSheet v-if="selectedChar==='thistle'" :character="thistle"/>
+    </section>
+    <!-- calculated skills
+      remove from json
+      passive perception = 10 + wis mod
+      initiative = 0 + dex mod
+      attribute mod = -10 / 2 .floor
+      skills = attribute mod
+      s/t = attribute mod
+      expertise = attribute mod * 2
+    -->
   </div>
 </template>
 
 <script>
-import Characters from '@/characters.json';
-import CharacterSheet from '@/components/organisms/CharacterSheet.vue';
+import Del from '@/data/characters/del.json';
+import Gardein from '@/data/characters/gardein.json';
+import Melonlord from '@/data/characters/melonlord.json';
+import Tantan from '@/data/characters/tantan.json';
+import Thistle from '@/data/characters/thistle.json';
+import CharacterSheet from '@/components/pages/CharacterSheet.vue';
 
 export default {
   name: 'Players',
   components: {
-    CharacterSheet,
+    CharacterSheet
   },
   data: () => ({
-    characters: Characters,
-    selectedChar: ''
-  }),
-  methods: {
-    generateKey(character) {
-      return Math.random().toString(36).substring(character, 8);
-    },
-  },
+    selectedChar: '',
+    del: Del,
+    gardein: Gardein,
+    melonlord: Melonlord,
+    tantan: Tantan,
+    thistle: Thistle
+  })
 };
 </script>
 
@@ -51,5 +61,9 @@ export default {
     img:not(:last-child) {
       margin-right: 30px;
     }
+  }
+
+  .image {
+    cursor: pointer;
   }
 </style>

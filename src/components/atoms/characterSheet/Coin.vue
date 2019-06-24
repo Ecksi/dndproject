@@ -1,15 +1,18 @@
 <template>
   <div>
-    <label for="coins" class="coin-label">
+    <label for="coins" class="coin-label center-caps">
       <slot></slot>
     </label>
-    <input type="number" for="coins" class="coin-input">
+    <input type="number" for="coins" class="coin-input border" :value="currency">
   </div>
 </template>
 
 <script>
   export default {
-    name: 'Coin'
+    name: 'Coin',
+    props: {
+      currency: Number
+    }
   }
 </script>
 

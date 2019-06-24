@@ -1,18 +1,17 @@
 <template>
-<!-- Turn this into a molecule? - atoms can include the box and the saves  -->
   <div class="hit-dice-death-saves">
-    <section class="hit-dice box">
+    <section class="hit-dice box border">
       <div class="hd-wrapper">
         <label for="hit-dice" class="hd-text">Hit Dice</label>
-        <input type="number" name="hit-dice" class="hd-number" placeholder="2d10">
+        <input type="text" name="hit-dice" class="hd-number" placeholder="2d10" :value="hit_dice">
       </div>
-      <input type="number" name="num-dice" class="num-of-dice">
-      <label for="num-dice" class="sub-arf">Hit Dice</label>
+      <input type="text" name="num-dice" class="num-of-dice" :value="hit_dice">
+      <label for="num-dice" class="sub-arf center-caps">Hit Dice</label>
     </section>
-    <section class="death-saves-foo box">
+    <section class="death-saves-foo box border">
       <DeathSaves>Successes</DeathSaves>
       <DeathSaves>Failures</DeathSaves>
-      <span class="sub-arf">Death Saves</span>
+      <span class="sub-arf center-caps">Death Saves</span>
     </section>
   </div>
 </template>

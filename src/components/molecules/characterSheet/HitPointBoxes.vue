@@ -1,7 +1,7 @@
 <template>
   <div class="hp-boxes">
-    <HitPointBox :hpBox="'top'" />
-    <HitPointBox :hpBox="'bot'" />
+    <HitPointBox :hpBox="'top'" :hit_points="hit_points" />
+    <HitPointBox :hpBox="'bot'" :hit_points="hit_points" />
   </div>
 </template>
 
@@ -12,6 +12,9 @@
     name: 'HitPointBoxes',
     components: {
       HitPointBox
+    },
+    props: {
+      hit_points: Number
     }
   }
 </script>

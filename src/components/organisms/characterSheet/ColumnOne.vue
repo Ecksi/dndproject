@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="col-piece">
     <section class="attributes-skills">
       <Attributes :attributes="attributes" :modifiers="modifiers" />
       <div class="skillsauce">

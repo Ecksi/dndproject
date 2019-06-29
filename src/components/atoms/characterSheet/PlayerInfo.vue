@@ -75,4 +75,24 @@
     margin-bottom: 5px;
     text-align: left;
   }
+
+  @media only screen and (max-width : 420px) {
+    .player-info {
+      border: none !important;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    .smock {
+      flex-direction: column;
+      border: none;
+      margin: 0;
+      width: 100vw;
+
+      li {
+        width: 80vw;
+      }
+    }
+  }
 </style>

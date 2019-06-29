@@ -1,22 +1,19 @@
 <template>
-  <div class="wizzle">
+  <div class="wizzle col-piece">
     <BackgroundTraits :bg_traits="bg_traits" />
-    <FeatureTraits />
-    <!-- <Portrait :portrait="portrait" /> -->
+    <FeatureTraits :features="features" />
   </div>
 </template>
 
 <script>
 import BackgroundTraits from '@/components/molecules/characterSheet/BackgroundTraits';
 import FeatureTraits from '@/components/atoms/characterSheet/FeatureTraits';
-import Portrait from '@/components/atoms/characterSheet/Portrait';
 
   export default {
     name: 'ColumnThree',
     components: {
       BackgroundTraits,
-      FeatureTraits,
-      Portrait
+      FeatureTraits
     },
     props: {
       bg_traits: Object,

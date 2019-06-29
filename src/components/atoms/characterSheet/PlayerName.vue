@@ -45,4 +45,11 @@
     padding-left: 12px;
     text-align: left;
   }
+
+  @media only screen and (max-width : 420px) {
+    .player-name {
+      border: none;
+      margin: 0 auto;
+    }
+  }
 </style>

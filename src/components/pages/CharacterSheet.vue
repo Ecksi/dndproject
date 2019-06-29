@@ -80,4 +80,25 @@ export default {
     display: flex;
     height: 90%;
   }
+
+  @media only screen and (max-width : 420px) {
+    .paper {
+      height: 100%;
+      width: 80vw;
+    }
+
+    .char-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .bottom-block {
+      flex-direction: column;
+      justify-content: center;
+
+      .col-piece {
+        margin: 0 auto 10px;
+      }
+    }
+  }
 </style>

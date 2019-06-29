@@ -84,4 +84,12 @@ export default {
     top: 0;
   }
 }
+
+@media only screen and (max-width : 420px) {
+  .char-portrait {
+    img:not(:last-child) {
+      margin-right: 10px !important;
+    }
+  }
+}
 </style>

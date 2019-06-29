@@ -15,15 +15,6 @@
       <CharacterSheet v-if="selectedChar==='tantan'" :character="tantan"/>
       <CharacterSheet v-if="selectedChar==='thistle'" :character="thistle"/>
     </section>
-    <!-- calculated skills
-      remove from json
-      passive perception = 10 + wis mod
-      initiative = 0 + dex mod
-      attribute mod = -10 / 2 .floor
-      skills = attribute mod
-      s/t = attribute mod
-      expertise = attribute mod * 2
-    -->
   </div>
 </template>
 

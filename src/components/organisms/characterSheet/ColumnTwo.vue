@@ -1,12 +1,12 @@
 <template>
-  <div class="moo-cow">
+  <div class="moo-cow col-piece">
     <section class="live-block">
       <ArmorInitSpeed :stats="stats" :init="init" />
       <HitPointBoxes :hit_points="stats.hit_points" />
       <HitDiceDeathSaves :hit_dice="stats.hit_dice" />
     </section>
-    <AttacksAndSpells />
-    <Equipment :currency="currency" />
+    <AttacksAndSpells :equipped="equipped" />
+    <Equipment :equipment="equipment" :currency="currency" />
   </div>
 </template>
 
@@ -29,6 +29,8 @@
     props: {
       stats: Object,
       init: Number,
+      equipped: Object,
+      equipment: Array,
       currency: Object
     }
   }

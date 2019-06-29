@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="feat-wrapper">
     <h1 class="sub-header-text">Check your Feats</h1>
     <section class="char-portrait">
       <img class="image" @click="selectedChar='del'" src="../../public/assets/del.png" alt="del">
@@ -9,23 +9,43 @@
       <img class="image" @click="selectedChar='thistle'" src="../../public/assets/thistle.png" alt="thistle">
     </section>
     <div v-if="selectedChar==='del'">
-      <h2 class="who">Del - Illuskan Human - Arcane Trickster Rogue</h2>
+      <h2 class="who">
+        <span>Del</span><span class="dash"> - </span>
+        <span>Illuskan Human</span><span class="dash"> - </span>
+        <span>Arcane Trickseter Rogue</span>
+      </h2>
       <Del />
     </div>
     <div v-if="selectedChar==='gardein'">
-      <h2 class="who">Gardein - Hill Dwarf - Wild Magic Sorcerer</h2>
+      <h2 class="who">
+        <span>Gardein Battlehammer</span><span class="dash"> - </span>
+        <span>Hill Dwarf</span><span class="dash"> - </span>
+        <span>Wild Magic Sorcerer</span>
+      </h2>
       <Gardein />
     </div>
     <div v-if="selectedChar==='melonlord'">
-      <h2 class="who">Melonlord - Dark Elf - Tempest Cleric</h2>
+      <h2 class="who">
+        <span>Melonlord</span><span class="dash"> - </span>
+        <span>Dark Elf</span><span class="dash"> - </span>
+        <span>Tempest Cleric</span>
+      </h2>
       <Melonlord />
     </div>
     <div v-if="selectedChar==='tantan'">
-      <h2 class="who">Tantan - White Dragonborn - School of ? Bard</h2>
+      <h2 class="who">
+        <span>Tantan</span><span class="dash"> - </span>
+        <span>White Dragonborn</span><span class="dash"> - </span>
+        <span>School of ? Bard</span>
+      </h2>
       <Tantan />
     </div>
     <div v-if="selectedChar==='thistle'">
-      <h2 class="who">Thistle - Half-Elf - Beastmaster Ranger</h2>
+      <h2 class="who">
+        <span>Thistle</span><span class="dash"> - </span>
+        <span>Half Elf</span><span class="dash"> - </span>
+        <span>Beastmaster Ranger</span>
+      </h2>
       <Thistle />
     </div>
   </div>
@@ -55,7 +75,7 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
   .char-portrait {
     display: flex;
     justify-content: center;
@@ -75,5 +95,26 @@ export default {
     font-size: 2rem;
     margin: 20px 0;
     text-align: center;
+  }
+
+  @media only screen and (max-width : 420px) {
+    .feats {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .otter {
+      border: none !important;
+      width: 100vw !important;
+    }
+
+    .who {
+      display: flex;
+      flex-direction: column;
+
+      .dash {
+        display: none;
+      }
+    }
   }
 </style>

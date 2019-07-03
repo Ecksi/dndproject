@@ -14,7 +14,7 @@
       HitPointBox
     },
     props: {
-      hit_points: Number
+      hit_points: String
     }
   }
 </script>

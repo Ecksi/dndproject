@@ -28,8 +28,8 @@
     name: 'Bonus',
     props: {
       type: String,
-      prof_bonus: String,
-      passive_perception: String
+      prof_bonus: Number,
+      passive_perception: Number
     }
   }
 </script>

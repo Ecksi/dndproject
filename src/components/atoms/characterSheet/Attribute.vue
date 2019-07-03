@@ -18,7 +18,7 @@
     },
     props: {
       attribute: String,
-      modifier: String,
+      modifier: Number,
     },
     computed: {
       stat() {

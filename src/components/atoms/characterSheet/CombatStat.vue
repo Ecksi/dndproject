@@ -11,7 +11,7 @@
     props: {
       phValue: Number,
       phText: String,
-      actualValue: Number
+      actualValue: [Number, String]
     }
   }
 </script>

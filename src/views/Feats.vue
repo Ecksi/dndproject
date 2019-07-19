@@ -1,13 +1,6 @@
 <template>
   <div class="feat-wrapper">
-    <h1 class="sub-header-text">Check your Feats</h1>
-    <section class="char-portrait">
-      <img class="image" @click="selectedChar='del'" src="../../public/assets/del.png" alt="del">
-      <img class="image" @click="selectedChar='gardein'" src="../../public/assets/gardein.png" alt="gardein">
-      <img class="image" @click="selectedChar='melonlord'" src="../../public/assets/melonlord.png" alt="melonlord">
-      <img class="image" @click="selectedChar='tantan'" src="../../public/assets/tantan.png" alt="tantan">
-      <img class="image" @click="selectedChar='thistle'" src="../../public/assets/thistle.png" alt="thistle">
-    </section>
+    <Portraits @selectedChar="(data) => selectedChar = data">Check your Feats</Portraits>
     <div v-if="selectedChar==='del'">
       <h2 class="who">
         <span>Del</span><span class="dash"> - </span>
@@ -52,6 +45,7 @@
 </template>
 
 <script>
+import Portraits from '@/components/atoms/Portraits';
 import Del from '@/components/molecules/characterFeats/Del';
 import Gardein from '@/components/molecules/characterFeats/Gardein';
 import Melonlord from '@/components/molecules/characterFeats/Melonlord';
@@ -61,6 +55,7 @@ import Thistle from '@/components/molecules/characterFeats/Thistle';
 export default {
   name: 'Feats',
   components: {
+    Portraits,
     Del,
     Gardein,
     Melonlord,
@@ -76,21 +71,6 @@ export default {
 </script>
 
 <style lang="less">
-  .char-portrait {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
-
-    img:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
-
-  .image {
-    cursor: pointer;
-  }
-
   .who {
     font-size: 2rem;
     margin: 20px 0;

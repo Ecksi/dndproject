@@ -11,7 +11,7 @@
   export default {
     name: 'Coin',
     props: {
-      currency: Number
+      currency: String
     }
   }
 </script>

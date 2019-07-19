@@ -16,7 +16,7 @@
     name: 'Skill',
     props: {
       proficient: Boolean,
-      modifier: String
+      modifier: Number
     }
   }
 </script>
